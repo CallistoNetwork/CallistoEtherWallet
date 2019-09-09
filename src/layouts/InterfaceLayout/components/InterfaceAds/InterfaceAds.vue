@@ -3,7 +3,7 @@
     <div class="global__interface-block__margin-top">
       <a
         :title="$t('common.twitterFollow')"
-        href="https://twitter.com/intent/follow?screen_name=myetherwallet"
+        href="https://twitter.com/intent/follow?screen_name=CallistoSupport"
         onclick="window.open(this.href, 'twitter-share', 'width=580,height=296');return false;"
       >
         <div
@@ -18,7 +18,7 @@
         </div>
       </a>
     </div>
-    <div class="global__interface-block__margin-top slider-container">
+    <!-- <div class="global__interface-block__margin-top slider-container">
       <b-carousel
         v-model="slide"
         :interval="adInterval"
@@ -36,7 +36,7 @@
           <buy-eth-ad />
         </b-carousel-slide>
       </b-carousel>
-    </div>
+    </div> -->
   </div>
 </template>
 

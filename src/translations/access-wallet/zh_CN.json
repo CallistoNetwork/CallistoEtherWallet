@@ -15,7 +15,7 @@
   "accessDeviceAddresses": "Choose a Hardware",
   "password": "密码",
   "mewConnectDesc": "Use MEWconnect to access my wallet",
-  "metaMaskDesc": "Use the MetaMask extension to access my wallet",
+  "metaMaskDesc": "Use the Callisto Hub extension to access my wallet",
   "installMetaMaskModalDesc": "请安装 Metamask 插件并刷新页面。",
   "refresh": "Refresh",
   "unlockMetamaskWallet": "无法访问钱包!请通过 Metamask 插件访问我的钱包",

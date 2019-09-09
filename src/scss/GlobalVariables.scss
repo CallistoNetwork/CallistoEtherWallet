@@ -60,7 +60,7 @@ $light-green-5: #00bfa4;
 $light-green-6: #c9f2ed;
 $light-green-7: #cff0f5;
 
-$mew-green: #05c0a5;
+$clo-green: #34c88a;
 
 $white: #fff;
 $black: #000;
@@ -95,8 +95,8 @@ $dark-grey-11: #999;
 $dark-grey-12: rgba(0, 0, 0, 0.7294117647058823);
 
 $dark-blue-1: #506175;
-$dark-blue-2: #0b2840;
-$dark-blue-4: #677890;
+$dark-blue-2: #003557;
+$dark-blue-4: #020202;
 $dark-blue-5: #434f60;
 $dark-blue-6: #003945;
 $dark-blue-7: #0c5876;
@@ -166,7 +166,7 @@ $notification-dot-background-color: $red-1;
 // *********************************************************************
 // This background color used for most of the elements background
 $background-color-1: $light-grey-1; // Lite grey background color
-$background-color-2: $mew-green; // Green background color
+$background-color-2: $clo-green; // Green background color
 $background-color-3: $light-grey-2; // Team page background
 $background-color-4: $light-grey-5;
 $background-color-5: $opaque-white-1;
@@ -187,6 +187,7 @@ $transaction-block-address: $light-purple-1;
 $transaction-block-balance: $light-blue-1;
 $transaction-block-network: $light-blue-4;
 $transaction-block-token-search: $dark-grey-2;
+$staking-block: #28a745;
 
 $button-background-color-1: $dark-grey-4;
 $button-active-background-color: $light-grey-15;
@@ -210,7 +211,7 @@ $border-color-6: $light-grey-2;
 $price-bar-border-color: $dark-blue-4;
 $border-bottom--mnemonic-phrase-key-color: $border-color-1;
 $border-bottom--mnemonic-phrase-key-color-verification: $dark-blue-5;
-$border-green: $mew-green;
+$border-green: $clo-green;
 
 // *********************************************************************
 // z-index values
@@ -230,7 +231,7 @@ $text-base-color: $dark-blue-1;
 $text-white: $white;
 $text-black: $black;
 $text-color-1: $white; // White text color
-$text-color-2: $mew-green; // Green text color
+$text-color-2: $clo-green; // Green text color
 $text-color-3: $dark-grey-11;
 $text-color-4: $dark-grey-2;
 $text-color-5: $red-2; // create-wallet footer text color
@@ -250,7 +251,7 @@ $text-side-menu-inactive-color: $light-grey-7;
 $text-good-button-not-good: $light-grey-8;
 
 $link-text-color-1: $dark-blue-1;
-$link-text-color-2: $mew-green;
+$link-text-color-2: $clo-green;
 $link-text-color-3: $dark-grey-6;
 
 // *********************************************************************
@@ -258,8 +259,8 @@ $link-text-color-3: $dark-grey-6;
 // *********************************************************************
 $button--text-color-1: $white;
 $button--border-color-1: $white;
-$button--border-color-2: $mew-green;
-$button--background-color-1: $mew-green;
+$button--border-color-2: $clo-green;
+$button--background-color-1: $clo-green;
 $button--background-color-1-dark: $dark-green-2;
 $button--background-color-2: $white;
 $button--background-color-3: $dark-grey-7;
@@ -297,13 +298,13 @@ $nav-tab-background-color: $white;
 $nav-tab--button-background-color: $light-grey-3;
 $nav-tab--button--active--background-color: $dark-grey-1;
 $nav-tab--button--active--font-color: $white;
-$nav-tab--progress-bar-background-color: $mew-green;
+$nav-tab--progress-bar-background-color: $clo-green;
 
 // *********************************************************************
 // CSS Toggle Button(Switch) style
 // *********************************************************************
 $css-toggle-button--slider-background-color: $light-grey-3;
-$css-toggle-button--button-background-color: $mew-green;
+$css-toggle-button--button-background-color: $clo-green;
 
 $css-toggle-button--slider--active--background-color: $background-color-2;
 
@@ -311,7 +312,7 @@ $disabled: $dark-grey-11;
 
 $very-weak: $red-4;
 $weak: $dark-blue-10;
-$strong: $mew-green;
+$strong: $clo-green;
 $very-strong: $dark-green-1;
 
 // *********************************************************************

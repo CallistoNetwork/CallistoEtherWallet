@@ -109,6 +109,18 @@ const setAccountBalance = function({ commit }, balance) {
   commit('SET_ACCOUNT_BALANCE', balance);
 };
 
+const setAccountStaked = function({ commit }, staked) {
+  commit('SET_ACCOUNT_STAKED', staked);
+};
+
+const setAccountReward = function({ commit }, reward) {
+  commit('SET_ACCOUNT_REWARD', reward);
+};
+
+const setAccountRound = function({ commit }, round) {
+  commit('SET_ACCOUNT_ROUND', round);
+};
+
 const setGasPrice = function({ commit }, gasPrice) {
   commit('SET_GAS_PRICE', gasPrice);
 };
@@ -245,6 +257,9 @@ export default {
   decryptWallet,
   removeCustomPath,
   setAccountBalance,
+  setAccountStaked,
+  setAccountReward,
+  setAccountRound,
   setGasPrice,
   setState,
   setENS,

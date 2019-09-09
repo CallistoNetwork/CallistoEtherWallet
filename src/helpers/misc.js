@@ -120,8 +120,8 @@ const reorderNetworks = () => {
   const newObject = Object.assign(
     {},
     {
+      CLO: nodeList['CLO'],
       ETH: nodeList['ETH'],
-      ROP: nodeList['ROP'],
       RIN: nodeList['RIN'],
       ...oldObject
     }

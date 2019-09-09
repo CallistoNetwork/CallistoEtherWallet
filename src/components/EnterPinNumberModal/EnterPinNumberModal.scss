@@ -39,7 +39,7 @@
     }
 
     span {
-      color: $mew-green;
+      color: $clo-green;
       cursor: pointer;
     }
   }
@@ -74,7 +74,7 @@ p {
   button {
     cursor: pointer;
     background: $light-grey-1;
-    border: 1px solid $mew-green;
+    border: 1px solid $clo-green;
     height: $button-element-size;
     width: $button-element-size;
     border-radius: 5px;
@@ -87,7 +87,7 @@ p {
     &::after {
       height: 8px;
       width: 8px;
-      background-color: $mew-green;
+      background-color: $clo-green;
       position: absolute;
       margin: auto;
       top: 0;
@@ -127,15 +127,15 @@ p {
     }
 
     .enable {
-      background-color: $mew-green;
-      border: 1px solid $mew-green;
+      background-color: $clo-green;
+      border: 1px solid $clo-green;
       color: $white;
     }
   }
 
   button {
-    background-color: $mew-green;
-    border: 1px solid $mew-green;
+    background-color: $clo-green;
+    border: 1px solid $clo-green;
     border-radius: 5px;
     color: $white;
     cursor: pointer;

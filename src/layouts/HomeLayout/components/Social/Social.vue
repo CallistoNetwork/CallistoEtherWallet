@@ -30,7 +30,7 @@
 <script>
 import github from '@/assets/images/icons/github.png';
 import reddit from '@/assets/images/icons/reddit.svg';
-import medium from '@/assets/images/icons/medium.png';
+// import medium from '@/assets/images/icons/medium.png';
 import twitter from '@/assets/images/icons/twitter.jpg';
 import facebook from '@/assets/images/icons/facebook.png';
 
@@ -40,27 +40,27 @@ export default {
       links: [
         {
           img: facebook,
-          to: 'https://www.facebook.com/MyEtherWallet',
+          to: 'https://www.facebook.com/callistonetwork',
           name: 'Facebook'
         },
         {
           img: twitter,
-          to: 'https://twitter.com/myetherwallet',
+          to: 'https://twitter.com/CallistoSupport',
           name: 'Twitter'
         },
-        {
-          img: medium,
-          to: 'https://medium.com/@myetherwallet',
-          name: 'Medium'
-        },
+        // {
+        //   img: medium,
+        //   to: 'https://medium.com/@myetherwallet',
+        //   name: 'Medium'
+        // },
         {
           img: reddit,
-          to: 'https://www.reddit.com/r/myetherwallet',
+          to: 'http://reddit.com/r/CallistoCrypto',
           name: 'reddit'
         },
         {
           img: github,
-          to: 'https://www.github.com/myetherwallet',
+          to: 'https://github.com/EthereumCommonwealth',
           name: 'github'
         }
       ]

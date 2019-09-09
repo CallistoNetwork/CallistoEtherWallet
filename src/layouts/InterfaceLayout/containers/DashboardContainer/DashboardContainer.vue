@@ -10,15 +10,20 @@
             class="clickable"
             @click.native="goTo('send-transaction')"
           />
-          <button-nft-manager
+          <button-staking
+            :disabled="!isOnlineAndClo"
+            class="clickable"
+            @click.native="goTo('cold-staking', !isOnlineAndClo)"
+          />
+          <!-- <button-nft-manager
             :disabled="!isOnlineAndEth"
             class="clickable"
             @click.native="goTo('nft-manager', !isOnlineAndEth)"
-          />
+          /> -->
         </div>
       </div>
 
-      <div class="container--card block--swap">
+      <!-- <div class="container--card block--swap">
         <div class="flex--row--align-center title">
           <h4>{{ $t('common.swap') }}</h4>
           <button
@@ -53,7 +58,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="container--card bottom--buttons">
@@ -97,6 +102,7 @@ import dapps from '@/dapps';
 import SwapWidget from '@/components/SwapWidget';
 import ButtonNftManager from './components/ButtonNftManager';
 import ButtonSendTx from './components/ButtonSendTx';
+import ButtonStaking from './components/ButtonStaking';
 
 import { SwapProviders, providers } from '@/partners';
 import BigNumber from 'bignumber.js';
@@ -114,7 +120,8 @@ export default {
     'dapp-buttons': DappButtons,
     'swap-widget': SwapWidget,
     'button-nft-manager': ButtonNftManager,
-    'button-send-tx': ButtonSendTx
+    'button-send-tx': ButtonSendTx,
+    'button-staking': ButtonStaking
   },
   props: {
     tokensWithBalance: {
@@ -199,6 +206,9 @@ export default {
     },
     isOnlineAndEth() {
       return this.online && this.network.type.name === 'ETH';
+    },
+    isOnlineAndClo() {
+      return this.online && this.network.type.name === 'CLO';
     }
   },
   watch: {

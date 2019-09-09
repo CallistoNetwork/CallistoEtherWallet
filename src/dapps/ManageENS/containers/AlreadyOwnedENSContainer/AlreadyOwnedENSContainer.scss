@@ -48,15 +48,15 @@
   .finalize-button {
     @extend %button-template;
 
-    background-color: $mew-green;
+    background-color: $clo-green;
     color: $white;
   }
 
   .manage-button {
     @extend %button-template;
 
-    border-color: $mew-green;
+    border-color: $clo-green;
     background-color: $white;
-    color: $mew-green;
+    color: $clo-green;
   }
 }

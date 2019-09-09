@@ -41,7 +41,7 @@
         <div class="header-text">
           <b>
             <img
-              src="~@/assets/images/short-hand-logo-white.png"
+              src="~@/assets/images/clo-logo-letters-white.svg"
               height="30px"
             />
             {{ mew }}
@@ -123,7 +123,7 @@
         </p>
       </div>
       <div class="logo-container">
-        <img src="~@/assets/images/short-hand-logo.png" height="25px" />
+        <img src="~@/assets/images/clo-logo.svg" height="25px" />
         <p class="border-line"></p>
         <p>{{ paper }}</p>
       </div>

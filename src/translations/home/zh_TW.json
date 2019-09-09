@@ -2,7 +2,7 @@
   "title1": "以太坊的",
   "title2": "原生錢包",
   "subheading": "MyEtherWallet (簡稱為 MEW) is a free, client-side interface helping you interact with the Ethereum blockchain. Our easy-to-use, open-source platform allows you to generate wallets, interact with smart contracts, and so much more.",
-  "obtainAddress": "Obtain an ETH address and generate your private key. Saving and safekeeping the key will be your responsibility.",
+  "obtainAddress": "Obtain an CLO address and generate your private key. Saving and safekeeping the key will be your responsibility.",
   "getStarted": "開始使用",
   "getANewWallet": "取得一個新錢包",
   "accessMyWalletDesc": "發送或交換您的 ETH 與 tokens, 購買 ENS 網域, 與智慧合約互動等! This is where the magic happens.",

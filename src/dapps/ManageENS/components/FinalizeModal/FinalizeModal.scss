@@ -23,14 +23,14 @@
     .cancel {
       @extend %button-template;
 
-      border: 1px solid $mew-green;
-      color: $mew-green;
+      border: 1px solid $clo-green;
+      color: $clo-green;
     }
 
     .confirm {
       @extend %button-template;
 
-      background-color: $mew-green;
+      background-color: $clo-green;
       color: $white;
     }
   }

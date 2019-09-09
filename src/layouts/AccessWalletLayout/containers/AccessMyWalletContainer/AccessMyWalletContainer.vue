@@ -108,12 +108,12 @@ import LedgerAppModal from '../../components/LedgerAppModal';
 import WalletPasswordModal from '@/components/WalletPasswordModal';
 import EnterPinNumberModal from '@/components/EnterPinNumberModal';
 
-import mewConnectImg from '@/assets/images/icons/button-mewconnect.svg';
+// import mewConnectImg from '@/assets/images/icons/button-mewconnect.svg';
 import hardwareImg from '@/assets/images/icons/button-hardware.svg';
 import metamaskImg from '@/assets/images/icons/button-metamask.svg';
 import softwareImg from '@/assets/images/icons/button-software.svg';
 
-import mewConnectImgDisabled from '@/assets/images/icons/button-mewconnect-disabled.svg';
+// import mewConnectImgDisabled from '@/assets/images/icons/button-mewconnect-disabled.svg';
 import hardwareImgDisabled from '@/assets/images/icons/button-hardware-disabled.svg';
 import metamaskImgDisabled from '@/assets/images/icons/button-metamask-disabled.svg';
 import softwareImgDisabled from '@/assets/images/icons/button-software-disabled.svg';
@@ -150,17 +150,17 @@ export default {
       walletConstructor: function() {},
       hardwareBrand: '',
       buttons: [
-        {
-          func: this.mewConnectModalOpen,
-          title: this.$t('common.mewConnect'),
-          desc: this.$t('accessWallet.mewConnectDesc'),
-          recommend: '',
-          tooltip: '',
-          img: mewConnectImg,
-          imgDisabled: mewConnectImgDisabled,
-          disabled: false,
-          classname: 'button-mewconnect'
-        },
+        // {
+        //   func: this.mewConnectModalOpen,
+        //   title: this.$t('common.mewConnect'),
+        //   desc: this.$t('accessWallet.mewConnectDesc'),
+        //   recommend: '',
+        //   tooltip: '',
+        //   img: mewConnectImg,
+        //   imgDisabled: mewConnectImgDisabled,
+        //   disabled: false,
+        //   classname: 'button-mewconnect'
+        // },
         {
           func: this.hardwareModalOpen,
           title: this.$t('common.hardware'),
@@ -174,7 +174,7 @@ export default {
         },
         {
           func: this.metamaskModalOpen,
-          title: 'MetaMask',
+          title: 'Callisto Hub',
           desc: this.$t('accessWallet.metaMaskDesc'),
           recommend: '',
           tooltip: '',

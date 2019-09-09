@@ -69,6 +69,18 @@ const SET_ACCOUNT_BALANCE = function(state, balance) {
   state.account.balance = balance;
 };
 
+const SET_ACCOUNT_STAKED = function(state, staked) {
+  state.account.staked = staked;
+};
+
+const SET_ACCOUNT_REWARD = function(state, reward) {
+  state.account.reward = reward;
+};
+
+const SET_ACCOUNT_ROUND = function(state, round) {
+  state.account.round = round;
+};
+
 const SET_ENS = function(state, ens) {
   state.ens = ens;
 };
@@ -124,6 +136,9 @@ export default {
   DECRYPT_WALLET,
   INIT_STATES,
   SET_ACCOUNT_BALANCE,
+  SET_ACCOUNT_STAKED,
+  SET_ACCOUNT_REWARD,
+  SET_ACCOUNT_ROUND,
   SET_LAST_PATH,
   SET_GAS_PRICE,
   SET_ENS,

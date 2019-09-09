@@ -23,14 +23,13 @@
           :class="!isOnTop && !isMenuOpen ? 'small-menu' : ''"
           class="logo-image--container"
         >
-          <img class="logo" src="~@/assets/images/short-hand-logo.png" />
+          <img class="logo" src="~@/assets/images/clo-logo.svg" />
         </div>
       </router-link>
       <div class="mobile-menu-button--container">
         <a href="https://ccswap.myetherwallet.com/#/" target="_blank">
           <div class="buy-eth">
-            <img src="@/assets/images/icons/buy-eth.svg" />
-            <p>Buy ETH</p>
+            <p>Buy CLO</p>
           </div>
         </a>
         <mobile-menu-button

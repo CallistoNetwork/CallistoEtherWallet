@@ -41,7 +41,7 @@
         <div class="header-text">
           <b>
             <img
-              src="~@/assets/images/short-hand-logo-white.png"
+              src="~@/assets/images/clo-logo-letters-white.svg"
               height="30px"
             />
           </b>
@@ -125,7 +125,7 @@
         </p>
       </div>
       <div class="logo-container">
-        <img src="~@/assets/images/short-hand-logo.png" height="25px" />
+        <img src="~@/assets/images/clo-logo.svg" height="25px" />
         <p class="border-line"></p>
         <p>{{ paper }}</p>
       </div>
@@ -152,8 +152,8 @@ export default {
       subheader: 'Always look for this icon when sending to this wallet',
       mew: 'MyEtherWallet',
       paper: 'Paper Wallet',
-      link1: 'support@myetherwallet.com',
-      link2: 'https://www.myetherwallet.com',
+      link1: 'support@callisto.network',
+      link2: 'https://www.callisto.network',
       myAddress: 'MY ADDRESS',
       myPriv: 'MY PRIVATE KEY',
       content: {

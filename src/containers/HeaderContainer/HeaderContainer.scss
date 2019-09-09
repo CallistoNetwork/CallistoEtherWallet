@@ -1,7 +1,7 @@
 @import '~@/scss/GlobalVariables';
 
 .vintage-header {
-  background-color: $mew-green;
+  background-color: $clo-green;
   color: $white;
   text-align: center;
   width: 100%;
@@ -87,12 +87,12 @@
       line-height: 10px;
 
       img {
-        height: 33px;
+        height: 50px;
         transition: all 0.3s ease;
       }
 
       .logo-small {
-        height: 28px;
+        height: 41px;
       }
 
       .beta-tag {
@@ -166,7 +166,7 @@
 
         img {
           border-radius: 3px;
-          box-shadow: 0 0 1pt 1pt $mew-green;
+          box-shadow: 0 0 1pt 1pt $clo-green;
           flex: 45;
           height: 16px;
           margin-right: 10px;

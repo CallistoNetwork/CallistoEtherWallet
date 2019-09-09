@@ -6,7 +6,7 @@ if (store.get('notifications') === undefined) store.set('notifications', {});
 const gettingStartedDone =
   store.get('skipTutorial') !== undefined ? store.get('skipTutorial') : false;
 const storedNetwork = store.get('network');
-let network = nodeList['ETH'][0];
+let network = nodeList['CLO'][0];
 
 if (storedNetwork !== undefined) {
   network = storedNetwork;
@@ -26,12 +26,15 @@ const state = {
     balance: 0,
     address: null,
     isHardware: false,
-    identifier: ''
+    identifier: '',
+    staked: '0',
+    reward: '0',
+    round: '0'
   },
   customPaths: customPaths,
   ens: null,
   Errors: {},
-  ethDonationAddress: '0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D',
+  ethDonationAddress: '0x74682fc32007af0b6118f259cbe7bccc21641600',
   gasPrice: gasPrice,
   Networks: nodeList,
   network: network,

@@ -31,11 +31,11 @@
           <div class="grid-col-2 mew-features">
             <dir class="content">
               <div class="image">
-                <img src="~@/assets/images/home/icon-wallet.svg" />
+                <img src="~@/assets/images/home/icon-swap.svg" />
               </div>
               <div class="text">
-                <h3>{{ $t('home.aboutMewWallet') }}</h3>
-                <p>{{ $t('home.aboutMewWalletDesc') }}</p>
+                <h3>{{ $t('common.coldStaking') }}</h3>
+                <p>{{ $t('home.coldStakingDesc') }}</p>
               </div>
             </dir>
             <dir class="content">
@@ -49,11 +49,11 @@
             </dir>
             <dir class="content">
               <div class="image">
-                <img src="~@/assets/images/home/icon-swap.svg" />
+                <img src="~@/assets/images/home/icon-wallet.svg" />
               </div>
               <div class="text">
-                <h3>{{ $t('common.swap') }}</h3>
-                <p>{{ $t('home.aboutSwapDesc') }}</p>
+                <h3>{{ $t('home.sendTokensTitle') }}</h3>
+                <p>{{ $t('home.sendTokensDesc') }}</p>
               </div>
             </dir>
             <dir class="content">
@@ -61,8 +61,8 @@
                 <img src="~@/assets/images/home/icon-mew-connect.svg" />
               </div>
               <div class="text">
-                <h3>{{ $t('common.mewConnect') }}</h3>
-                <p>{{ $t('home.aboutMewConnectDesc') }}</p>
+                <h3>{{ $t('common.joinTitle') }}</h3>
+                <p>{{ $t('home.joinDesc') }}</p>
               </div>
             </dir>
           </div>

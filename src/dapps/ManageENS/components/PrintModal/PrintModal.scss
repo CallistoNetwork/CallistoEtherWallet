@@ -22,11 +22,11 @@
 
   span,
   p {
-    color: $mew-green;
+    color: $clo-green;
   }
 
   span {
-    border-right: 1px solid $mew-green;
+    border-right: 1px solid $clo-green;
     height: 30px;
   }
 
@@ -98,7 +98,7 @@
   display: flex;
 
   .print-button {
-    background-color: $mew-green;
+    background-color: $clo-green;
     border-radius: 5px;
     color: $white;
     cursor: pointer;

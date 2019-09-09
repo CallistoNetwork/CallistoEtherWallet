@@ -1,5 +1,5 @@
 const ConvertUnits = () => import('@/layouts/ConvertUnits');
-const TeamLayout = () => import('@/layouts/TeamLayout');
+// const TeamLayout = () => import('@/layouts/TeamLayout');
 const PrivacyPolicyLayout = () => import('@/layouts/PrivacyPolicyLayout');
 const TermsAndConditionsLayout = () =>
   import('@/layouts/TermsAndConditionsLayout');
@@ -19,6 +19,8 @@ const InteractWithContractContainer = () =>
   import('@/layouts/InterfaceLayout/containers/InteractWithContractContainer');
 const NFTManagerContainer = () =>
   import('@/layouts/InterfaceLayout/containers/NFTManagerContainer');
+const ColdStakingContainer = () =>
+  import('@/layouts/InterfaceLayout/containers/ColdStakingContainer');
 const SendCurrencyContainer = () =>
   import('@/layouts/InterfaceLayout/containers/SendCurrencyContainer');
 const SendOfflineContainer = () =>
@@ -36,12 +38,12 @@ const DashboardContainer = () =>
 import dapps from '@/dapps/routes';
 
 const router = [
-  {
-    path: '/team',
-    name: 'TeamLayout',
-    component: TeamLayout,
-    meta: { requiresAuth: false }
-  },
+  // {
+  //   path: '/team',
+  //   name: 'TeamLayout',
+  //   component: TeamLayout,
+  //   meta: { requiresAuth: false }
+  // },
   {
     path: '/privacy-policy',
     name: 'PrivacyPolicyLayout',
@@ -135,6 +137,11 @@ const router = [
         path: 'send-transaction',
         name: 'Send Tx',
         component: SendCurrencyContainer
+      },
+      {
+        path: 'cold-staking',
+        name: 'Cold Staking',
+        component: ColdStakingContainer
       },
       {
         path: 'send-offline',

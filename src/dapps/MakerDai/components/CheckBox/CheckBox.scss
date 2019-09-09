@@ -41,7 +41,7 @@ a {
   width: 25px;
   background-color: #fff;
   border-radius: 7px;
-  border: 1px solid $mew-green;
+  border: 1px solid $clo-green;
 }
 
 /* On mouse-over, add a grey background color */
@@ -51,7 +51,7 @@ a {
 
 /* When the checkbox is checked, add a blue background */
 .check-box-container input:checked ~ .checkmark {
-  background-color: $mew-green;
+  background-color: $clo-green;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

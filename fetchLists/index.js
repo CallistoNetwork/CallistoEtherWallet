@@ -93,7 +93,7 @@ const fetchContracts = async () => {
 
 const run = async () => {
   await fetchTokens()
-    .then(fetchContracts)
+    // .then(fetchContracts)
     .then(fetchDarkList);
 };
 

@@ -87,5 +87,11 @@
   "ntfManager": "NFT Manager",
   "loading": "Loading",
   "path": "Path",
-  "alias": "Alias"
+  "alias": "Alias",
+  "coldStaking": "Cold Staking",
+  "joinTitle": "Join to Wallet",
+  "goToStake": "Go to Cold Staking",
+  "amountStaked": "Amount Staked",
+  "fastClaim": "Claim reward",
+  "availableReward": "Available reward"
 }

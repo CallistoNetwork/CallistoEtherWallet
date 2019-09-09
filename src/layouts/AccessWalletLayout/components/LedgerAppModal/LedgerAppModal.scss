@@ -83,7 +83,7 @@
     position: relative;
 
     i {
-      color: $mew-green;
+      color: $clo-green;
       display: none;
       font-size: 16px;
       left: -12px;
@@ -171,14 +171,14 @@
     margin-right: 10px;
 
     &:hover {
-      background-color: $mew-green;
+      background-color: $clo-green;
     }
   }
 
   .proceed {
     @extend %button;
 
-    background-color: $mew-green;
+    background-color: $clo-green;
     flex: auto;
 
     &:active {

@@ -73,7 +73,7 @@ export default {
         ${this.description}
       `;
       // eslint-disable-next-line
-      return `mailto:support@myetherwallet.com?subject=${encodeURIComponent(
+      return `mailto:support@callisto.network?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`;
     }

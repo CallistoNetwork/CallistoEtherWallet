@@ -50,30 +50,41 @@ export default {
             inactive: ''
           },
           titleKey: 'common.offline'
-        },
-        {
-          name: 'nft-manager',
-          onlineOnly: true,
-          routes: ['/interface/nft-manager'],
-          icons: {
-            active: '',
-            inactive: ''
-          },
-          titleKey: 'common.ntfManager'
         }
+        // {
+        //   name: 'nft-manager',
+        //   onlineOnly: true,
+        //   routes: ['/interface/nft-manager'],
+        //   icons: {
+        //     active: '',
+        //     inactive: ''
+        //   },
+        //   titleKey: 'common.ntfManager'
+        // }
       ]
     },
     {
-      name: 'swap',
+      name: 'cold-staking',
       onlineOnly: true,
-      routes: ['/interface/swap'],
+      routes: ['/interface/cold-staking'],
       icons: {
-        active: require('@/assets/images/sidemenu/swap-active.svg'),
-        inactive: require('@/assets/images/sidemenu/swap.svg')
+        active: require('@/assets/images/sidemenu/send-active.svg'),
+        inactive: require('@/assets/images/sidemenu/send.svg')
       },
-      titleKey: 'common.swap',
+      titleKey: 'interface.csSideMenuTitle',
       children: []
     },
+    // {
+    //   name: 'swap',
+    //   onlineOnly: true,
+    //   routes: ['/interface/swap'],
+    //   icons: {
+    //     active: require('@/assets/images/sidemenu/swap-active.svg'),
+    //     inactive: require('@/assets/images/sidemenu/swap.svg')
+    //   },
+    //   titleKey: 'common.swap',
+    //   children: []
+    // },
     {
       name: 'dapps',
       onlineOnly: true,

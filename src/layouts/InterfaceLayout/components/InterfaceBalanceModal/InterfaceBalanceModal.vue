@@ -54,14 +54,14 @@ export default {
           name: 'BTC',
           value: ''
         },
-        {
-          name: 'REP',
-          value: ''
-        },
-        {
-          name: 'CHF',
-          value: ''
-        },
+        // {
+        //   name: 'REP',
+        //   value: ''
+        // },
+        // {
+        //   name: 'CHF',
+        //   value: ''
+        // },
         {
           name: 'USD',
           value: ''
@@ -69,11 +69,11 @@ export default {
         {
           name: 'EUR',
           value: ''
-        },
-        {
-          name: 'GBP',
-          value: ''
         }
+        // {
+        //   name: 'GBP',
+        //   value: ''
+        // }
       ]
     };
   },

@@ -1,7 +1,7 @@
 @import '~@/scss/GlobalVariables';
 
 $input-title-color: #212529;
-$mew-green-light: #05c7aa;
+$clo-green-light: #05c7aa;
 
 .schedule-view-container {
   background-color: $white;
@@ -54,20 +54,20 @@ $mew-green-light: #05c7aa;
     text-align: center;
 
     &:hover {
-      background-color: $mew-green-light;
-      border-color: $mew-green-light;
+      background-color: $clo-green-light;
+      border-color: $clo-green-light;
       color: $white;
     }
 
     &:active {
-      background-color: $mew-green;
-      border-color: $mew-green;
+      background-color: $clo-green;
+      border-color: $clo-green;
       color: $white;
     }
 
     &.selected {
-      background-color: $mew-green;
-      border-color: $mew-green;
+      background-color: $clo-green;
+      border-color: $clo-green;
       color: $white;
     }
   }

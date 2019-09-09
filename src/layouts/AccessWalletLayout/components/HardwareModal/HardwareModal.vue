@@ -45,11 +45,11 @@
 <script>
 import CustomerSupport from '@/components/CustomerSupport';
 import ledger from '@/assets/images/icons/HardwareWallet/ledger.svg';
-import bitbox from '@/assets/images/icons/HardwareWallet/bitbox.svg';
-import secalot from '@/assets/images/icons/HardwareWallet/secalot.svg';
+// import bitbox from '@/assets/images/icons/HardwareWallet/bitbox.svg';
+// import secalot from '@/assets/images/icons/HardwareWallet/secalot.svg';
 import trezor from '@/assets/images/icons/HardwareWallet/trezor.svg';
-import keepkey from '@/assets/images/icons/HardwareWallet/keepkey.svg';
-import finney from '@/assets/images/icons/button-finney-hover.png';
+// import keepkey from '@/assets/images/icons/HardwareWallet/keepkey.svg';
+// import finney from '@/assets/images/icons/button-finney-hover.png';
 import WalletOption from '../WalletOption';
 import { Toast } from '@/helpers';
 import { isSupported } from 'u2f-api';
@@ -104,23 +104,23 @@ export default {
           msg: '',
           link: 'https://www.ledger.com?r=fa4b'
         },
-        {
-          name: 'finney',
-          imgPath: finney,
-          text: 'FINNEY',
-          disabled: false,
-          msg: '',
-          link:
-            'http://shop.sirinlabs.com?rfsn=2397639.54fdf&utm_source=refersion&utm_medium=affiliate&utm_campaign=2397639.54fdf'
-        },
-        {
-          name: BITBOX_TYPE,
-          imgPath: bitbox,
-          text: 'BitBox',
-          disabled: false,
-          msg: '',
-          link: 'https://shiftcrypto.ch/?ref=mew'
-        },
+        // {
+        //   name: 'finney',
+        //   imgPath: finney,
+        //   text: 'FINNEY',
+        //   disabled: false,
+        //   msg: '',
+        //   link:
+        //     'http://shop.sirinlabs.com?rfsn=2397639.54fdf&utm_source=refersion&utm_medium=affiliate&utm_campaign=2397639.54fdf'
+        // },
+        // {
+        //   name: BITBOX_TYPE,
+        //   imgPath: bitbox,
+        //   text: 'BitBox',
+        //   disabled: false,
+        //   msg: '',
+        //   link: 'https://shiftcrypto.ch/?ref=mew'
+        // },
         {
           name: TREZOR_TYPE,
           imgPath: trezor,
@@ -134,23 +134,23 @@ export default {
               ? 'Browser not supported by Trezor'
               : '',
           link: 'https://trezor.io/?offer_id=12&aff_id=2029'
-        },
-        {
-          name: SECALOT_TYPE,
-          imgPath: secalot,
-          text: 'Secalot',
-          disabled: false,
-          msg: '',
-          link: 'https://www.secalot.com/'
-        },
-        {
-          name: KEEPKEY_TYPE,
-          imgPath: keepkey,
-          text: 'KeepKey',
-          disabled: false,
-          msg: '',
-          link: 'http://lddy.no/a4im'
         }
+        // {
+        //   name: SECALOT_TYPE,
+        //   imgPath: secalot,
+        //   text: 'Secalot',
+        //   disabled: false,
+        //   msg: '',
+        //   link: 'https://www.secalot.com/'
+        // },
+        // {
+        //   name: KEEPKEY_TYPE,
+        //   imgPath: keepkey,
+        //   text: 'KeepKey',
+        //   disabled: false,
+        //   msg: '',
+        //   link: 'http://lddy.no/a4im'
+        // }
       ]
     };
   },

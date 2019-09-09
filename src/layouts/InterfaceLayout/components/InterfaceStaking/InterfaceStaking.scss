@@ -1,0 +1,45 @@
+@import '../InformationBlock';
+
+.icon-border {
+  padding-right: 10px;
+  img {
+    height: 60px;
+  }
+}
+
+.info-block-container {
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.info-block h2 {
+  font-size: 20px;
+}
+
+.information-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.staking {
+  background-color: $staking-block;
+
+  .staking-text-container {
+    display: inline-block;
+  }
+
+  .staking-text {
+    font-size: 20px;
+    font-weight: 300;
+
+    p {
+      font-size: 20px;
+      text-overflow: ellipsis;
+      word-wrap: normal;
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}

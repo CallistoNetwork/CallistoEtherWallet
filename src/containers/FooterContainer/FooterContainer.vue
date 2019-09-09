@@ -72,20 +72,6 @@
                   Donation
                 </p>
               </a>
-
-              <a
-                href="https://blockchain.info/address/1DECAF2uSpFTP4L1fAHR8GCLrPqdwdLse9"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p
-                  class="crypto-link no-padding"
-                  data-btc="1DECAF2uSpFTP4L1fAHR8GCLrPqdwdLse9"
-                >
-                  <img src="~@/assets/images/icons/btc.svg" /> &nbsp;Bitcoin
-                  Donation
-                </p>
-              </a>
             </div>
           </div>
         </div>
@@ -139,7 +125,7 @@
 import { mapState } from 'vuex';
 import FeedbackModal from '@/components/FeedbackModal';
 import CustomerSupport from '@/components/CustomerSupport';
-import affiliates from './affiliates.js';
+// import affiliates from './affiliates.js';
 const version = VERSION;
 
 export default {
@@ -181,15 +167,15 @@ export default {
             //   text: this.$t('footer.advanced'),
             //   to: '/advanced-tools'
             // },
-            {
-              text: this.$t('footer.extension'),
-              href:
-                'https://chrome.google.com/webstore/detail/myetherwallet/nlbmnnijcnlegkjjpcfjclmcfggfefdm?hl=en'
-            },
-            {
-              text: 'Buy a Hardware wallet',
-              to: '/hardware-wallet-affiliates'
-            },
+            // {
+            //   text: this.$t('footer.extension'),
+            //   href:
+            //     'https://chrome.google.com/webstore/detail/myetherwallet/nlbmnnijcnlegkjjpcfjclmcfggfefdm?hl=en'
+            // },
+            // {
+            //   text: 'Buy a Hardware wallet',
+            //   to: '/hardware-wallet-affiliates'
+            // },
             {
               text: this.$t('footer.sendOffline'),
               to: '/send-offline-helper'
@@ -200,11 +186,11 @@ export default {
             }
           ]
         },
-        {
-          class: 'e2',
-          title: this.$t('footer.affiliates'),
-          contents: affiliates
-        },
+        // {
+        //   class: 'e2',
+        //   title: this.$t('footer.affiliates'),
+        //   contents: affiliates
+        // },
         {
           class: 'e3',
           title: this.$t('footer.mew'),
@@ -213,62 +199,62 @@ export default {
               text: this.$t('footer.about'),
               to: '/#about-mew'
             },
-            {
-              text: this.$t('footer.team'),
-              to: '/team'
-            },
+            // {
+            //   text: this.$t('footer.team'),
+            //   to: '/team'
+            // },
             {
               text: this.$t('common.faqs'),
               to: '/#faqs'
             },
-            {
-              text: 'MEWtopia',
-              href: 'https://www.mewtopia.com'
-            },
-            {
-              text: this.$t('common.vintage'),
-              href: 'https://vintage.myetherwallet.com'
-            },
+            // {
+            //   text: 'MEWtopia',
+            //   href: 'https://www.mewtopia.com'
+            // },
+            // {
+            //   text: this.$t('common.vintage'),
+            //   href: 'https://vintage.myetherwallet.com'
+            // },
             {
               text: this.$t('common.customerSupport'),
-              href: 'mailto:support@myetherwallet.com'
-            },
-            {
-              text: 'Help Center',
-              href: 'https://kb.myetherwallet.com'
+              href: 'mailto:support@callisto.network'
             }
+            // {
+            //   text: 'Help Center',
+            //   href: 'https://kb.myetherwallet.com'
+            // }
           ]
         }
       ],
       links: [
         {
-          to: 'https://www.facebook.com/myetherwallet',
+          to: 'https://www.facebook.com/callistonetwork/',
           class: 'fa-facebook'
         },
         {
-          to: 'https://www.twitter.com/@myetherwallet',
+          to: 'https://twitter.com/CallistoSupport',
           class: 'fa-twitter'
         },
         {
-          to: 'https://www.instagram.com/myetherwallet',
+          to: 'https://www.instagram.com/callisto.network/',
           class: 'fa-instagram'
         },
         {
-          to: 'https://www.linkedin.com/company/myetherwallet',
+          to: 'https://www.linkedin.com/company/callisto-network/',
           class: 'fa-linkedin'
         },
         {
-          to: 'https://www.github.com/myetherwallet',
+          to: 'https://github.com/EthereumCommonwealth',
           class: 'fa-github'
         },
         {
-          to: 'https://www.reddit.com/r/myetherwallet',
+          to: 'http://reddit.com/r/CallistoCrypto',
           class: 'fa-reddit-alien'
-        },
-        {
-          to: 'https://www.medium.com/@myetherwallet',
-          class: 'fa-medium'
         }
+        // {
+        //   to: 'https://www.medium.com/@myetherwallet',
+        //   class: 'fa-medium'
+        // }
       ]
     };
   },

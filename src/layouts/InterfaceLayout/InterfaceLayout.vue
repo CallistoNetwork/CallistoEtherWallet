@@ -83,6 +83,13 @@
             :nonce="nonce"
           />
           <div class="tokens">
+            <interface-staking
+              :disabled="!isOnlineAndClo"
+              :staked="account.staked"
+              :reward="account.reward"
+              :get-staked="getStaked"
+              :claim-reward="claimReward"
+            />
             <interface-tokens
               :fetch-tokens="setTokens"
               :get-token-balance="getTokenBalance"
@@ -109,6 +116,7 @@ import MnemonicModal from '@/layouts/AccessWalletLayout/components/MnemonicModal
 import LedgerAppModal from '@/layouts/AccessWalletLayout/components/LedgerAppModal';
 import InterfaceAddress from './components/InterfaceAddress';
 import InterfaceBalance from './components/InterfaceBalance';
+import InterfaceStaking from './components/InterfaceStaking';
 import InterfaceNetwork from './components/InterfaceNetwork';
 import InterfaceSideMenu from './components/InterfaceSideMenu';
 import InterfaceTokens from './components/InterfaceTokens';
@@ -118,6 +126,7 @@ import { Web3Wallet } from '@/wallets/software';
 import { Toast } from '@/helpers';
 import { toChecksumAddress } from '@/helpers/addressUtils';
 import * as networkTypes from '@/networks/types';
+import coldStakingAbi from '../../utils/csAbi';
 import { BigNumber } from 'bignumber.js';
 import store from 'store';
 import TokenBalance from '@myetherwallet/eth-token-balance';
@@ -146,6 +155,7 @@ export default {
     'interface-side-menu': InterfaceSideMenu,
     'interface-address': InterfaceAddress,
     'interface-balance': InterfaceBalance,
+    'interface-staking': InterfaceStaking,
     'interface-network': InterfaceNetwork,
     'interface-tokens': InterfaceTokens,
     'wallet-password-modal': WalletPasswordModal,
@@ -162,6 +172,9 @@ export default {
   data() {
     return {
       balance: '0',
+      staked: '0',
+      reward: '0',
+      round: '0',
       blockNumber: 0,
       tokens: [],
       receivedTokens: false,
@@ -451,6 +464,9 @@ export default {
           Toast.responseHandler(e, Toast.ERROR);
         });
     },
+    isOnlineAndClo() {
+      return this.online && this.network.type.name === 'CLO';
+    },
     getBalance() {
       const web3 = this.web3;
       web3.eth
@@ -462,6 +478,48 @@ export default {
         .catch(e => {
           Toast.responseHandler(e, Toast.ERROR);
         });
+    },
+    getStaked() {
+      const web3 = this.web3;
+      const csAddress = '0xd813419749b3c2cDc94A2F9Cfcf154113264a9d6';
+      const csContract = new web3.eth.Contract(coldStakingAbi, csAddress);
+      csContract.methods
+        .staker(this.address.toLowerCase())
+        .call()
+        .then(res => {
+          this.balance = web3.utils.fromWei(res.amount, 'ether');
+          this.$store.dispatch('setAccountStaked', this.balance);
+        })
+        .catch(error => Toast.responseHandler(error, Toast.ERROR));
+    },
+    getReward() {
+      const web3 = this.web3;
+      const csAddress = '0xd813419749b3c2cDc94A2F9Cfcf154113264a9d6';
+      const csContract = new web3.eth.Contract(coldStakingAbi, csAddress);
+      csContract.methods
+        .stake_reward(this.address.toLowerCase())
+        .call()
+        .then(res => {
+          this.reward = web3.utils.fromWei(res, 'ether');
+          this.$store.dispatch('setAccountReward', this.reward);
+        })
+        .catch(error => Toast.responseHandler(error, Toast.ERROR));
+    },
+    getRoundInterval() {
+      const web3 = this.web3;
+      const csAddress = '0xd813419749b3c2cDc94A2F9Cfcf154113264a9d6';
+      const csContract = new web3.eth.Contract(coldStakingAbi, csAddress);
+      csContract.methods
+        .round_interval()
+        .call()
+        .then(res => {
+          this.roundInterval = res / 86400;
+          this.$store.dispatch('setAccountRound', this.roundInterval);
+        })
+        .catch(error => Toast.responseHandler(error, Toast.ERROR));
+    },
+    claimReward() {
+      console.log('claiming amount awarded');
     },
     checkMetamaskAddrChange() {
       const web3 = this.web3;
@@ -509,6 +567,9 @@ export default {
           this.setENS();
           this.getBlock();
           this.getBalance();
+          this.getStaked();
+          this.getReward();
+          this.getRoundInterval();
           this.setTokens();
           this.setNonce();
           this.getHighestGas();
