@@ -4,7 +4,7 @@
     <div class="send-form">
       <div class="form-block amount-to-address">
         <div class="amount">
-          <div class="single-input-block">
+          <!-- <div class="single-input-block">
             <div class="title">
               <h4>{{ $t('interface.sendTxType') }}</h4>
             </div>
@@ -15,7 +15,7 @@
               :default="selectedCurrency !== '' ? selectedCurrency : {}"
               @selectedCurrency="selectedCurrency = $event"
             />
-          </div>
+          </div> -->
           <div class="single-input-block">
             <div class="title">
               <h4>{{ $t('interface.sendTxAmount') }}</h4>
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="to-address">
+        <!-- <div class="to-address">
           <div class="title">
             <h4>
               {{ $t('interface.sendTxToAddr') }}
@@ -91,8 +91,8 @@
               aria-hidden="true"
             />
           </div>
-        </div>
-        <div class="tx-fee">
+        </div> -->
+        <!-- <div class="tx-fee">
           <div class="title">
             <h4>
               {{ $t('common.txFee') }}
@@ -104,23 +104,21 @@
           <div class="fee-value">
             <div class="gwei">
               {{ gasPrice }} Gwei
-              <!--(Economic)-->
             </div>
             <div v-show="network.type.name === 'ETH'" class="usd">
               Cost {{ txFeeEth }} ETH = ${{ convert }}
             </div>
           </div>
-        </div>
+        </div>  -->
       </div>
     </div>
-
+<!-- 
     <div class="send-form advanced">
       <div class="advanced-content">
         <div class="toggle-button-container">
           <h4>{{ $t('common.advanced') }}</h4>
           <div class="toggle-button">
             <span>{{ $t('interface.dataGas') }}</span>
-            <!-- Rounded switch -->
             <div class="sliding-switch-white">
               <label class="switch">
                 <input
@@ -173,7 +171,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="submit-button-container">
       <div

@@ -110,12 +110,11 @@ import EnterPinNumberModal from '@/components/EnterPinNumberModal';
 
 // import mewConnectImg from '@/assets/images/icons/button-mewconnect.svg';
 import hardwareImg from '@/assets/images/icons/button-hardware.svg';
-import metamaskImg from '@/assets/images/icons/button-metamask.svg';
+import cloImg from '@/assets/images/icons/clo/clo-hub-disabled.svg';
 import softwareImg from '@/assets/images/icons/button-software.svg';
 
 // import mewConnectImgDisabled from '@/assets/images/icons/button-mewconnect-disabled.svg';
 import hardwareImgDisabled from '@/assets/images/icons/button-hardware-disabled.svg';
-import metamaskImgDisabled from '@/assets/images/icons/button-metamask-disabled.svg';
 import softwareImgDisabled from '@/assets/images/icons/button-software-disabled.svg';
 
 import { mapState } from 'vuex';
@@ -172,17 +171,17 @@ export default {
           disabled: false,
           classname: 'button-hardware'
         },
-        {
-          func: this.metamaskModalOpen,
-          title: 'Callisto Hub',
-          desc: this.$t('accessWallet.metaMaskDesc'),
-          recommend: '',
-          tooltip: '',
-          img: metamaskImg,
-          imgDisabled: metamaskImgDisabled,
-          disabled: false,
-          classname: 'button-metamask'
-        },
+        // {
+        //   func: this.metamaskModalOpen,
+        //   title: 'Callisto Hub',
+        //   desc: this.$t('accessWallet.metaMaskDesc'),
+        //   recommend: '',
+        //   tooltip: '',
+        //   img: cloImg,
+        //   imgDisabled: cloImg,
+        //   disabled: false,
+        //   classname: 'button-metamask'
+        // },
         {
           func: this.softwareModalOpen,
           title: this.$t('accessWallet.software'),

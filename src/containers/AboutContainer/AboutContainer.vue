@@ -13,7 +13,7 @@
               <div class="image-content">
                 <img
                   class="mew-icon"
-                  src="~@/assets/images/home/mew-icon.png"
+                  src="~@/assets/images/clo-logo-solo.svg"
                 />
               </div>
               <div class="animation-content">

@@ -9,7 +9,7 @@
         <div v-show="!byJson && !byMnemonic" class="nav-tab-user-input-box">
           <b-tabs class="x100">
             <div v-if="showProgressBar && false" class="progress-bar" />
-            <b-tab
+            <!-- <b-tab
               class="mew-connect-block"
               title="MEWconnect"
               active
@@ -63,14 +63,14 @@
               <div class="bottom-image">
                 <img src="@/assets/images/etc/phones.png" />
               </div>
-            </b-tab>
+            </b-tab> -->
             <b-tab
               :title="$t('createWallet.byJsonFile')"
               @click="showProgressBar = true"
             >
-              <div class="warning">
+              <!-- <div class="warning">
                 <warning-message />
-              </div>
+              </div> -->
               <div class="tab-content-block">
                 <div class="title-block">
                   <div class="title-popover">
@@ -93,9 +93,9 @@
               :title="$t('createWallet.byMnemonic')"
               @click="showProgressBar = true"
             >
-              <div class="warning">
+              <!-- <div class="warning">
                 <warning-message />
-              </div>
+              </div> -->
               <div class="tab-content-block">
                 <div class="title-block">
                   <div class="title-popover">

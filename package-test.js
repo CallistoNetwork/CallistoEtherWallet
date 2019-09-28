@@ -19,6 +19,8 @@ const EXCEPTIONS = [
   'bootstrap-vue',
   'web3-core-requestmanager',
   'vue-tel-input',
+  'stylelint',
+  'stylelint-config-standard',
   '@vue/eslint-config-prettier'
 ];
 const CUSTOM_DIST = {

@@ -68,7 +68,7 @@
                 rel="noopener noreferrer"
               >
                 <p :data-eth="ethDonationAddress" class="crypto-link">
-                  <img src="~@/assets/images/icons/eth.svg" /> &nbsp;Ethereum
+                  CLO, ETH or ETC
                   Donation
                 </p>
               </a>
