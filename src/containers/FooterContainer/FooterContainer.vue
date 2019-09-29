@@ -68,8 +68,7 @@
                 rel="noopener noreferrer"
               >
                 <p :data-eth="ethDonationAddress" class="crypto-link">
-                  CLO, ETH or ETC
-                  Donation
+                  CLO, ETH or ETC Donation
                 </p>
               </a>
             </div>

@@ -110,7 +110,7 @@ import EnterPinNumberModal from '@/components/EnterPinNumberModal';
 
 // import mewConnectImg from '@/assets/images/icons/button-mewconnect.svg';
 import hardwareImg from '@/assets/images/icons/button-hardware.svg';
-import cloImg from '@/assets/images/icons/clo/clo-hub-disabled.svg';
+// import cloImg from '@/assets/images/icons/clo/clo-hub-disabled.svg';
 import softwareImg from '@/assets/images/icons/button-software.svg';
 
 // import mewConnectImgDisabled from '@/assets/images/icons/button-mewconnect-disabled.svg';
