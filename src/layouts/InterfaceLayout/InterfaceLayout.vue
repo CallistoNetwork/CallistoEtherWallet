@@ -519,7 +519,7 @@ export default {
         .catch(error => Toast.responseHandler(error, Toast.ERROR));
     },
     claimReward() {
-      return
+      return true;
       // console.log('claiming amount awarded');
     },
     checkMetamaskAddrChange() {

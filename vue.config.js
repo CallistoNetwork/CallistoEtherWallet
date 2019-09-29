@@ -179,7 +179,33 @@ if (process.env.NODE_ENV === 'production') {
           'src/builds/web/public/img/icons/safari-pinned-tab.svg',
           'src/builds/web/public/img/spaceman.png',
           'src/builds/web/public/manifest.json',
-          'src/builds/web/public/robots.txt'
+          'src/builds/web/public/robots.txt',
+          // Modifications
+          'src/assets/images/etc/phones.png',
+          'src/assets/images/home/mew-icon.png',
+          'src/assets/images/icons/btc.svg',
+          'src/assets/images/icons/button-finney-hover.png',
+          'src/assets/images/icons/button-metamask-disabled.svg',
+          'src/assets/images/icons/button-metamask.svg',
+          'src/assets/images/icons/button-mewconnect-disabled.svg',
+          'src/assets/images/icons/button-mewconnect.svg',
+          'src/assets/images/icons/buy-eth.svg',
+          'src/assets/images/icons/clo-badge.svg',
+          'src/assets/images/icons/clo/clo-hub-disabled.svg',
+          'src/assets/images/icons/clo/clo-hub.svg',
+          'src/assets/images/icons/eth.svg',
+          'src/assets/images/icons/HardwareWallet/bitbox.svg',
+          'src/assets/images/icons/HardwareWallet/keepkey.svg',
+          'src/assets/images/icons/HardwareWallet/secalot.svg',
+          'src/assets/images/icons/medium.png',
+          'src/assets/images/mini-logo.svg',
+          'src/assets/images/short-hand-logo-white.png',
+          'src/assets/images/sidemenu/swap-active.svg',
+          'src/assets/images/sidemenu/swap.svg',
+          'src/layouts/TeamLayout/index.js',
+          'src/layouts/TeamLayout/TeamLayout.scss',
+          'src/layouts/TeamLayout/TeamLayout.vue'
+
         ]
       }
     })
